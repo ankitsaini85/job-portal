@@ -1,0 +1,100 @@
+/* Responsive styles for Referral Register page */
+:root{
+  --card-bg: #ffffff;
+  --card-radius: 12px;
+  --card-shadow: 0 12px 40px rgba(2,6,23,0.06);
+  --input-border: #e5e7eb;
+  --accent: #2563eb;
+  --muted: #6b7280;
+}
+
+.referral-card-wrap{
+  max-width: 720px;
+  margin: 20px auto;
+  padding: 20px;
+  
+}
+
+.referral-card{
+  background: var(--card-bg);
+  border-radius: var(--card-radius);
+  padding: 20px;
+  /* box-shadow: var(--card-shadow); */
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  border: 1px solid rgba(2,6,23,0.06);
+  box-shadow: var(--card-shadow);
+}
+.refferal-image{
+  width: 120px;
+  height: 120px;
+  margin: 0 auto;
+}
+
+.referral-card h3{
+  margin: 0 0 6px 0;
+  font-size: 1.25rem;
+}
+
+.referral-form{
+  display: grid;
+  gap: 12px;
+}
+
+.referral-form label{ display:flex; flex-direction:column; gap:6px; font-size: 0.95rem; color: #111827; }
+.input-field{
+  padding: 12px 14px;
+  border-radius: 10px;
+  border: 1px solid var(--input-border);
+  font-size: 1rem;
+  outline: none;
+  transition: border-color .15s, box-shadow .15s;
+  border: 1px solid black;
+}
+.input-field:focus{ border-color: var(--accent); box-shadow: 0 6px 20px rgba(37,99,235,0.08); }
+
+.form-row{ display:flex; gap:12px; }
+.form-row .col{ flex:1; }
+
+.error-text{ color: #b91c1c; font-size: 0.85rem; margin-top:6px; }
+
+.actions{ display:flex; gap:10px; justify-content:flex-end; align-items:center; }
+.btn-primary{
+  background: var(--accent);
+  color: white;
+  border: none;
+  padding: 10px 16px;
+  border-radius: 10px;
+  cursor: pointer;
+  font-weight: 600;
+}
+.btn-primary[disabled]{ opacity: 0.6; cursor: not-allowed; }
+.btn-outline{ background: transparent; border: 1px solid #d1d5db; padding: 10px 14px; border-radius: 10px; cursor:pointer }
+
+/* greeting / header area styles used on referral and wallet pages */
+.sub-header { min-height: 70px; display: flex; align-items: center; padding: 10px 0; background: linear-gradient(90deg,#fff,#f2f7ff); box-shadow: 0 1px 3px rgba(0,0,0,0.06); border-bottom: 1px solid rgba(0,0,0,0.03); }
+.sub-header .sub-header-inner { width: 100%; max-width: 1200px; margin: 0 auto; padding: 0 20px; display:flex; align-items:center; justify-content:space-between; }
+.greeting { display:flex; flex-direction:column; gap:6px; }
+.greeting h2 { margin: 0; font-size: 20px; color: #0f172a; font-weight:700; }
+
+/* ID badge and hint used in welcome/special/wallet pages; kept compact for referral header too */
+.id-badge { display:inline-flex; align-items:center; gap:8px; padding:6px 10px; background: linear-gradient(90deg,#f8fafc,#eef2ff); border-radius:999px; border:1px solid rgba(14,165,160,0.08); box-shadow: 0 8px 18px rgba(2,6,23,0.06); cursor:pointer; }
+.id-badge .id-label { font-size:12px; color:#6b7280; text-transform:uppercase; letter-spacing:0.6px; }
+.id-badge .id-value { color:#065f46; font-weight:800; font-size:14px; }
+.id-badge .id-hint { font-size:11px; color:#2563eb; margin-left:6px; }
+
+/* wallet badge for compact display next to greeting */
+.wallet-badge { display:inline-flex; align-items:center; gap:8px; padding:6px 10px; border-radius:999px; background:linear-gradient(90deg,#fff,#f8fafc); border:1px solid rgba(14,165,160,0.06); box-shadow:0 6px 18px rgba(2,6,23,0.04); cursor:pointer; }
+.wallet-badge .wallet-icon { font-size:16px; }
+.wallet-badge .wallet-amount { font-weight:800; color:#065f46; }
+
+/* Mobile adjustments */
+@media (max-width: 640px){
+  .referral-card-wrap{ margin: 12px; padding: 0; }
+  .referral-card{ padding: 16px; gap: 10px; }
+  .form-row{ flex-direction: column; }
+  .actions{ flex-direction: column-reverse; align-items: stretch; }
+  .btn-primary, .btn-outline{ width: 100%; }
+  .referral-card h3{ font-size: 1.1rem; }
+}
