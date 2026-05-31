@@ -1,0 +1,481 @@
+/* MyEarnings.css - Professional styling for earnings dashboard */
+
+.earnings-page {
+  background: linear-gradient(135deg, #f5f7fa 0%, #c3cfe2 100%);
+  min-height: calc(100vh - 180px);
+}
+
+.earnings-container {
+  max-width: 1000px;
+  margin: 0 auto;
+  padding: 32px 20px;
+}
+
+/* ==================== Total Earnings Card ==================== */
+.earnings-header {
+  margin-bottom: 32px;
+  animation: slideInDown 0.6s ease-out;
+}
+
+.total-card {
+  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+  color: white;
+  border-radius: 20px;
+  padding: 40px 32px;
+  box-shadow: 0 20px 60px rgba(102, 126, 234, 0.3);
+  text-align: center;
+  transition: all 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+  border: 2px solid rgba(255, 255, 255, 0.2);
+  backdrop-filter: blur(10px);
+}
+
+.total-card:hover {
+  transform: translateY(-8px) scale(1.02);
+  box-shadow: 0 30px 80px rgba(102, 126, 234, 0.4);
+}
+
+.total-label {
+  font-size: 16px;
+  font-weight: 500;
+  opacity: 0.9;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  margin-bottom: 12px;
+}
+
+.total-amount {
+  font-size: 56px;
+  font-weight: 800;
+  background: linear-gradient(135deg, #ffd89b 0%, #19547b 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  margin-bottom: 12px;
+  display: inline-block;
+}
+
+.total-subtext {
+  font-size: 14px;
+  opacity: 0.85;
+  font-weight: 400;
+}
+
+/* ==================== Alerts ==================== */
+.alert {
+  border-radius: 12px;
+  padding: 16px 20px;
+  margin-bottom: 24px;
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  font-size: 15px;
+  animation: slideInRight 0.5s ease-out;
+  border-left: 4px solid;
+}
+
+.alert span {
+  font-size: 20px;
+  flex-shrink: 0;
+}
+
+.alert-error {
+  background: linear-gradient(135deg, #fee2e2 0%, #fecaca 100%);
+  color: #991b1b;
+  border-left-color: #dc2626;
+}
+
+.alert-warning {
+  background: linear-gradient(135deg, #fef3c7 0%, #fde68a 100%);
+  color: #92400e;
+  border-left-color: #f59e0b;
+}
+
+/* ==================== No Data State ==================== */
+.no-data {
+  background: white;
+  border-radius: 16px;
+  padding: 60px 20px;
+  text-align: center;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.07);
+  animation: fadeIn 0.6s ease-out;
+}
+
+.no-data-icon {
+  font-size: 64px;
+  margin-bottom: 20px;
+  animation: float 3s ease-in-out infinite;
+}
+
+.no-data-text {
+  font-size: 20px;
+  font-weight: 600;
+  color: #1f2937;
+  margin-bottom: 8px;
+}
+
+.no-data-subtext {
+  font-size: 15px;
+  color: #6b7280;
+  line-height: 1.6;
+}
+
+/* ==================== Referrals List ==================== */
+.referrals-list {
+  display: grid;
+  gap: 16px;
+}
+
+.referral-item {
+  background: white;
+  border-radius: 12px;
+  overflow: hidden;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.07);
+  transition: all 0.3s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+  animation: slideInUp 0.5s ease-out backwards;
+}
+
+.referral-item.open {
+  box-shadow: 0 20px 25px rgba(0, 0, 0, 0.12);
+  border: 2px solid #667eea;
+}
+
+.referral-item:hover {
+  box-shadow: 0 12px 24px rgba(0, 0, 0, 0.1);
+  transform: translateY(-2px);
+}
+
+/* ==================== Referral Header ==================== */
+.referral-header {
+  width: 100%;
+  background: linear-gradient(135deg, #f8f9fa 0%, #f0f1f3 100%);
+  border: none;
+  padding: 20px 24px;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  gap: 16px;
+  justify-content: space-between;
+  transition: all 0.3s ease;
+  border-bottom: 2px solid transparent;
+}
+
+.referral-item.open .referral-header {
+  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+  color: white;
+  border-bottom-color: #667eea;
+}
+
+.referral-header:hover {
+  background: linear-gradient(135deg, #f0f1f3 0%, #e5e7eb 100%);
+}
+
+.referral-item.open .referral-header:hover {
+  background: linear-gradient(135deg, #7c8ff5 0%, #8a5db5 100%);
+}
+
+.referral-info {
+  flex: 1;
+  text-align: left;
+}
+
+.referral-name {
+  font-size: 16px;
+  font-weight: 700;
+  color: inherit;
+  margin-bottom: 4px;
+}
+
+.referral-item.open .referral-name {
+  color: white;
+}
+
+.referral-id {
+  font-size: 13px;
+  color: #6b7280;
+  font-weight: 500;
+}
+
+.referral-item.open .referral-id {
+  color: rgba(255, 255, 255, 0.85);
+}
+
+.referral-stats {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  gap: 8px;
+}
+
+.referral-amount {
+  font-size: 18px;
+  font-weight: 800;
+  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+
+.referral-item.open .referral-amount {
+  background: none;
+  -webkit-text-fill-color: unset;
+  color: #ffd89b;
+}
+
+.referral-status {
+  font-size: 12px;
+  font-weight: 600;
+  padding: 4px 12px;
+  border-radius: 20px;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+}
+
+.referral-status.active {
+  background: linear-gradient(135deg, #d1fae5 0%, #a7f3d0 100%);
+  color: #065f46;
+}
+
+.referral-status.inactive {
+  background: linear-gradient(135deg, #f3f4f6 0%, #e5e7eb 100%);
+  color: #374151;
+}
+
+.referral-item.open .referral-status {
+  background: rgba(255, 255, 255, 0.2);
+  color: white;
+}
+
+.expand-icon {
+  font-size: 18px;
+  transition: transform 0.3s ease;
+  color: #6b7280;
+  flex-shrink: 0;
+}
+
+.referral-item.open .expand-icon {
+  color: white;
+}
+
+.expand-icon.open {
+  transform: rotate(180deg);
+}
+
+/* ==================== Referral Details ==================== */
+.referral-details {
+  background: linear-gradient(135deg, #f9fafb 0%, #f3f4f6 100%);
+  padding: 24px;
+  animation: expandDown 0.3s ease-out;
+  border-top: 2px solid #e5e7eb;
+}
+
+.detail-row {
+  display: grid;
+  grid-template-columns: 120px 1fr;
+  gap: 16px;
+  padding: 12px 0;
+  border-bottom: 1px solid #e5e7eb;
+  align-items: center;
+}
+
+.detail-row:last-child {
+  border-bottom: none;
+}
+
+.detail-label {
+  font-weight: 600;
+  color: #374151;
+  font-size: 14px;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+}
+
+.detail-value {
+  color: #1f2937;
+  font-size: 15px;
+  word-break: break-word;
+}
+
+.detail-value.highlight {
+  font-weight: 700;
+  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+
+/* ==================== Animations ==================== */
+@keyframes slideInDown {
+  from {
+    opacity: 0;
+    transform: translateY(-30px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes slideInUp {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes slideInRight {
+  from {
+    opacity: 0;
+    transform: translateX(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes float {
+  0%, 100% {
+    transform: translateY(0px);
+  }
+  50% {
+    transform: translateY(-10px);
+  }
+}
+
+@keyframes expandDown {
+  from {
+    opacity: 0;
+    max-height: 0;
+  }
+  to {
+    opacity: 1;
+    max-height: 500px;
+  }
+}
+
+/* ==================== Responsive Design ==================== */
+@media (max-width: 768px) {
+  .earnings-container {
+    padding: 20px 12px;
+  }
+
+  .total-card {
+    padding: 28px 20px;
+  }
+
+  .total-amount {
+    font-size: 40px;
+  }
+
+  .referral-header {
+    padding: 16px;
+    flex-wrap: wrap;
+    gap: 12px;
+  }
+
+  .referral-stats {
+    width: 100%;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 8px;
+  }
+
+  .detail-row {
+    grid-template-columns: 100px 1fr;
+    gap: 12px;
+  }
+
+  .detail-label {
+    font-size: 13px;
+  }
+
+  .detail-value {
+    font-size: 14px;
+  }
+
+  .expand-icon {
+    order: -1;
+  }
+
+  .referral-info {
+    flex-basis: 100%;
+  }
+}
+
+@media (max-width: 480px) {
+  .earnings-container {
+    padding: 16px 10px;
+  }
+
+  .total-card {
+    padding: 24px 16px;
+  }
+
+  .total-label {
+    font-size: 14px;
+  }
+
+  .total-amount {
+    font-size: 32px;
+  }
+
+  .referral-header {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .referral-stats {
+    width: 100%;
+    margin-top: 8px;
+  }
+
+  .referral-details {
+    padding: 16px;
+  }
+
+  .detail-row {
+    grid-template-columns: 1fr;
+    padding: 8px 0;
+  }
+
+  .detail-label {
+    font-size: 12px;
+    opacity: 0.7;
+  }
+
+  .detail-value {
+    font-size: 14px;
+    font-weight: 500;
+  }
+
+  .alert {
+    font-size: 13px;
+    padding: 12px 16px;
+  }
+
+  .no-data-icon {
+    font-size: 48px;
+  }
+
+  .no-data-text {
+    font-size: 18px;
+  }
+
+  .no-data-subtext {
+    font-size: 13px;
+  }
+}
