@@ -16,3 +16,18 @@ Task Submission System
 Transaction History
 Responsive Mobile-Friendly Interface
 
+💼 Job Management
+Browse Available Job Cards
+View Job Details
+Apply for Jobs
+Track Application Status
+Active Work Assignment
+Data Entry Task Allocation
+
+💳 Payment Integration
+Chinese Payment Gateway Integration
+Secure Payment Processing
+Payment Verification
+Transaction Management
+Deposit Tracking
+
