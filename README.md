@@ -44,3 +44,10 @@ Activity Tracking
 Website Settings Management
 Platform Statistics
 
+📈 Reporting & Monitoring
+User Activity Reports
+Job Application Reports
+Payment Reports
+Work Submission Reports
+Admin Analytics Dashboard
+
