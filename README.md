@@ -102,3 +102,18 @@ Protected Routes
 Role-Based Access Control
 User
 Admin
+
+
+⚙️ Installation
+Clone Repository
+git clone https://github.com/yourusername/zix-rktm.git
+cd zix-rktm
+Install Dependencies
+
+Frontend
+cd client
+npm install
+Backend
+cd server
+npm install
+
