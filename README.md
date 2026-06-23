@@ -131,3 +131,15 @@ PAYMENT_API_URL=your_gateway_url
 PAYMENT_MERCHANT_ID=your_merchant_id
 PAYMENT_SECRET_KEY=your_secret_key
 
+▶️ Run Project
+
+Start Backend
+cd server
+npm run dev
+
+Start Frontend
+cd client
+npm run dev
+
+
+
