@@ -91,3 +91,14 @@ ZIX-RKTM/
 ├── .env
 ├── README.md
 └── package.json
+
+🔐 Authentication
+
+The platform uses:
+
+JWT Token Authentication
+Password Encryption using bcrypt
+Protected Routes
+Role-Based Access Control
+User
+Admin
