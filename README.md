@@ -31,3 +31,16 @@ Payment Verification
 Transaction Management
 Deposit Tracking
 
+📊 Admin Panel
+Admin Authentication
+Dashboard Analytics
+Add/Edit/Delete Job Cards
+User Management
+Task Management
+Work Approval System
+Payment Monitoring
+Transaction Reports
+Activity Tracking
+Website Settings Management
+Platform Statistics
+
