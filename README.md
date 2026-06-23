@@ -71,3 +71,23 @@ MongoDB Atlas
 Payment Gateway
 Chinese Payment Gateway API Integration
 
+
+ZIX-RKTM/
+│
+├── client/
+│   ├── src/
+│   ├── public/
+│   └── package.json
+│
+├── server/
+│   ├── controllers/
+│   ├── models/
+│   ├── routes/
+│   ├── middleware/
+│   ├── config/
+│   └── package.json
+│
+├── uploads/
+├── .env
+├── README.md
+└── package.json
