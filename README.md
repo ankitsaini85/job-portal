@@ -51,3 +51,23 @@ Payment Reports
 Work Submission Reports
 Admin Analytics Dashboard
 
+🛠️ Technology Stack
+Frontend
+React.js
+Vite
+React Router DOM
+Axios
+Bootstrap / Tailwind CSS
+Material UI (Optional)
+Backend
+Node.js
+Express.js
+MongoDB
+Mongoose
+JWT Authentication
+bcrypt.js
+Database
+MongoDB Atlas
+Payment Gateway
+Chinese Payment Gateway API Integration
+
