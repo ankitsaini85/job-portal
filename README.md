@@ -170,5 +170,13 @@ View Deposits
 Verify Transactions
 Manage Payment Records
 
+📱 Responsive Design
+
+The platform is fully responsive and optimized for:
+
+Desktop
+Tablet
+Mobile Devices
+
 
 
