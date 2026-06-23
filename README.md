@@ -117,3 +117,17 @@ Backend
 cd server
 npm install
 
+Environment Variables
+
+Create a .env file inside the server directory.
+
+PORT=5000
+
+MONGO_URI=your_mongodb_connection_string
+
+JWT_SECRET=your_jwt_secret
+
+PAYMENT_API_URL=your_gateway_url
+PAYMENT_MERCHANT_ID=your_merchant_id
+PAYMENT_SECRET_KEY=your_secret_key
+
