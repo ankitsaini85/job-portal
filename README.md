@@ -178,5 +178,14 @@ Desktop
 Tablet
 Mobile Devices
 
+🔒 Security Features
+
+JWT Authentication
+Password Hashing
+API Validation
+Protected Routes
+Role-Based Access Control
+Secure Payment Requests
+
 
 
