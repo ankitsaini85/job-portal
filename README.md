@@ -141,5 +141,34 @@ Start Frontend
 cd client
 npm run dev
 
+👨‍💼 Admin Functions
+
+Job Management
+
+Create Job Cards
+Edit Job Cards
+Delete Job Cards
+Activate/Deactivate Jobs
+
+User Management
+
+View Users
+Manage User Accounts
+Verify Users
+Block/Unblock Users
+
+Work Management
+
+Assign Data Entry Tasks
+Review Submitted Work
+Approve or Reject Work
+Monitor User Performance
+
+Payment Management
+
+View Deposits
+Verify Transactions
+Manage Payment Records
+
 
 
