@@ -56,7 +56,10 @@ Admin Analytics Dashboard
 ### Home Page
 ![Home](./screenshots/Screenshot%20(791).png)
 
+## Screenshots
 
+### Login Page
+![Login](./screenshots/Screenshot%20(792).png)
 
 🛠️ Technology Stack
 Frontend
