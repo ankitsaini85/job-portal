@@ -51,6 +51,13 @@ Payment Reports
 Work Submission Reports
 Admin Analytics Dashboard
 
+## Screenshots
+
+### Home Page
+![Home](./screenshots/Screenshot%20(791).png)
+
+
+
 🛠️ Technology Stack
 Frontend
 React.js
