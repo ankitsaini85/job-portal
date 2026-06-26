@@ -81,6 +81,11 @@ Admin Analytics Dashboard
 ### Sidebar Page
 ![Sidebar Page](./screenshots/Screenshot%20(794).png)
 
+## Screenshots
+
+### Main Page
+![Main Page](./screenshots/Screenshot%20(796).png)
+
 🛠️ Technology Stack
 Frontend
 React.js
