@@ -76,6 +76,11 @@ Admin Analytics Dashboard
 ### Card Page
 ![Card Page](./screenshots/Screenshot%20(795).png)
 
+## Screenshots
+
+### Sidebar Page
+![Sidebar Page](./screenshots/Screenshot%20(794).png)
+
 🛠️ Technology Stack
 Frontend
 React.js
