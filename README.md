@@ -66,6 +66,11 @@ Admin Analytics Dashboard
 ### Signup Page
 ![Signup](./screenshots/Screenshot%20(793).png)
 
+## Screenshots
+
+### Services
+![Services](./screenshots/Screenshot%20(796).png)
+
 🛠️ Technology Stack
 Frontend
 React.js
